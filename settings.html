@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
 
     <title>Universal Notice Board</title>
 </head>
@@ -30,9 +32,9 @@
             </form>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-dashboard fa-lg"></span>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-dashboard fa-lg"></span>
                             Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/send.html"><span
+                    <li class="nav-item"><a class="nav-link" href="./send.html"><span
                                 class="fa fa-paper-plane fa-lg"></span>
                             Send</a></li>
                     <li class="nav-item"><a class="nav-link" href="./discover.html"><span
@@ -40,7 +42,7 @@
                             Discover</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a id="settings" href="/settings.html">
+                    <a id="settings" href="./settings.html">
                         <span class="fa fa-cog fa-lg"></span> Settings
                     </a>
                 </span>
@@ -50,6 +52,51 @@
     <header>
 
     </header>
+
+    <div class="container">
+        <div id="form">
+            <img class="img-fluid" src="/img/profile.png" alt="profile image" width="100" height="100">
+            <form>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label"> First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstname" name="firstname"
+                            placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-md-2 col-form-label"> Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telnum" class="col-12 col-md-2 col-form-label"> Tel Number</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="ariacode" name="ariacode" placeholder="Aria code">
+                    </div>
+                    <div class="col-7 col-md-7">
+                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="emailid" class="col-md-2 col-form-label"> Email ID</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email ID">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-6">
+                        <button type="submit" class="btn btn-primary">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -96,10 +143,12 @@
             </div>
         </div>
     </footer>
-    
+
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

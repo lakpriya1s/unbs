@@ -1,0 +1,14 @@
+.navbar-dark{
+    background-color: orange;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0; 
+}
+
+.footer{
+    background-color: orange;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
